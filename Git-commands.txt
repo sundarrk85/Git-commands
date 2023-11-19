@@ -1,0 +1,8 @@
+CONFIG
+git config --global user.name='Your name here'
+git config --global user.email='Abc@gmail.com'
+git config --list
+git config --local user.name='Your name here'
+git config --local user.email='Abc@gmail.com'
+vi ~/'gitconfig
+git config --global alias.ec 'commit -m'
