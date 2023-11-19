@@ -6,3 +6,13 @@ git config --local user.name='Your name here'
 git config --local user.email='Abc@gmail.com'
 vi ~/'gitconfig
 git config --global alias.ec 'commit -m'
+
+
+FILE CREATION
+echo 'Hello all' >> a.txt     >> Append
+echo 'Hello all' > a.txt      > Deletes all content and update with new content
+touch b.txt
+rm a.txt
+mv a.txt e.txt
+vi c.txt  --> i, :wq
+cat d.txt
