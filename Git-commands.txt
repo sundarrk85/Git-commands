@@ -16,3 +16,26 @@ rm a.txt
 mv a.txt e.txt
 vi c.txt  --> i, :wq
 cat d.txt
+
+
+INITIALIZE
+git init
+rm -rf .git                 r - recursive, f - forcefully
+
+
+STAGING
+git add .
+git add a.txt
+
+
+UNSTAGING
+git restore --staged a.txt      restore - After 1st commit
+git restore --staged .
+git rm --cached a.txt           rm - Before 1st commit
+
+
+COMMIT
+git commit -m 'Initial commit'
+git add . | git commit -m 'Commit message'
+git commit -am 'Express commit'             (Express commit - works only for tracked files)
+
