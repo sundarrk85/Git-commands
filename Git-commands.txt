@@ -56,4 +56,28 @@ git status -s
 git status --long
  
 
+BRANCH
+git branch
+git branch -b newbranchname
+git branch -m oldname newname
+git branch -m newname
+git branch -d branchname
+git branch -a                               a - to see all branches (local & remote)
+git branch -r                               r - to see remote branches
+git branch -vv                              vv - to see tracking branches
+git checkout br2
+git switch br2
+git branch --set-upstream-to=origin/master master
+git push origin master -u
+
+
+REMOTE
+git remote
+git remote -v
+git remote add origin 'https.....'
+git remote remove origin
+git remote show origin
+git remote rename origin test
+
+
 
