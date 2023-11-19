@@ -39,3 +39,21 @@ git commit -m 'Initial commit'
 git add . | git commit -m 'Commit message'
 git commit -am 'Express commit'             (Express commit - works only for tracked files)
 
+
+LOG
+git log
+git log --oneline
+git log --oneline --graph
+git log --reflog                      reflog - to see all commits happened
+git log a.txt
+git log 'From C.ID'..'To C.ID'
+git log -n 3 --oneline               last 3 commits to display
+
+
+STATUS
+git status
+git status -s
+git status --long
+ 
+
+
