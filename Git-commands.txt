@@ -80,4 +80,9 @@ git remote show origin
 git remote rename origin test
 
 
-
+TAGS
+git tag v1.0.0 (Lightwieght tag)                      //v1.0.0 is the tag name
+git tag -a v1.0.0 -m 'Annotated tag'
+By default the tags are not pushed to remote from locally
+git push --tags -v                                  //Pushing only tags not changes
+git push origin v1.0.1 -v
