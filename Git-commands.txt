@@ -86,3 +86,74 @@ git tag -a v1.0.0 -m 'Annotated tag'
 By default the tags are not pushed to remote from locally
 git push --tags -v                                  //Pushing only tags not changes
 git push origin v1.0.1 -v
+git show v1.0                                       //details of v1.0
+git tag -l "v1.0.*"                                 //Wildcards
+git tag -d v1.0                                     //delete (--delete/-d)
+git tag -d v1.0 v1.1                                //delete multiple tags
+git push origin -d v1.0                             //delete tags from remote
+git push origin -d v1.0 v1.1                        //delete multiple tags from remote
+
+
+REBASE
+steps:
+git checkout feature
+git rebase master
+git checkout master
+git merge feature
+//Rebase - Process of combining or moving a sequence of commits to new base commit
+git rebase feature(from beranch) master(to branch)
+
+
+PUSH/PULL
+git push origin master
+git pull origin master
+git push origin master -u                   //setting upstream to track branch
+git fetch 
+
+
+RESET
+//options - --hard, --soft, --mixed(default)
+git reset ID
+git reset HEAD~5                            //resets last 5 commits from HEAD
+
+
+REVERT
+git revert HEAD
+
+
+AMEND
+git commit --amend -m "New commit message for last commit"
+git commit --amend --author='Test user'<Test@gmail.com>
+
+
+CHERRY-PICK
+git cheery-pick ID 
+git cherry-pick --no-commit ID
+
+
+REFLOG
+//Operations stored for 90 days by default
+git reflog, git reflog -5
+git reflog show master
+
+
+ADVANCED COMMANDS
+git log --graph
+git log --status                    //What changes in that commit
+git log -pick                       //changes in file also
+git shortlog                        //list of authors with their commit counts
+git shortlog -n                     //summary of authors with commits
+git shortlog -n -s -e               //with email
+git log --author='Test'             //Only commits made by Test author
+git log --oneliine --grep='Added'   //Filters commit message LIKE "Added"
+git show ID                         //To view what changes made in that commit
+git log --pretty=format:"%H"        //List of IDs full format
+git log --pretty=format:"%h"        //List of IDs short form (8 chars)
+git log --pretty=format:"Author:%cn" ID:%H"     // %cn - committer name, %cd - commit date
+git log --merges --oneline          //only merge commits
+git log --no-merges --oneline       //No merge commits
+
+
+
+
+
